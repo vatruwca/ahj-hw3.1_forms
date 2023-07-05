@@ -1,8 +1,3 @@
-// const { left, top } = element.getBoundingClientRect();
-// popUp.style.bottom = top - 5 + px;
-// popUp.style.left = left + px;
-//
-
 export default class Popover {
   constructor(parentEl) {
     this.parentEl = parentEl;
@@ -12,12 +7,12 @@ export default class Popover {
   static get markup() {
     return `
         <button class="button">
-            Click to toggle popover
-        </button>
-        <div class="popover">
-            <div class="popover_title">Popover title</div>
-            <div class="popover_text">And here's some amazing content. It's very engaging. Right?</div>
-        </div>
+            <h2>Click to toggle popover</h2>                           
+            <div class="popover">
+                <div class="popover_title">Popover title</div>
+                <div class="popover_text">And here's some amazing content. It's very engaging. Right?</div>
+            </div>
+        </button>      
         `;
   }
 
